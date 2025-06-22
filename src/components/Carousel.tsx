@@ -134,10 +134,7 @@ const Carousel = memo(function Carousel({ slides, autoPlay = true, interval = 50
         <>
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-30 
-                       bg-white/20 hover:bg-white/40 active:bg-white/60
-                       rounded-full p-4 min-w-[48px] min-h-[48px] 
-                       transition-all touch-manipulation"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 rounded-full p-3 transition-all"
             aria-label="Previous slide"
           >
             <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -162,18 +159,13 @@ const Carousel = memo(function Carousel({ slides, autoPlay = true, interval = 50
             <button
               key={idx}
               onClick={() => setCurrentSlide(idx)}
-              className={`min-w-[44px] min-h-[44px] rounded-full transition-all touch-manipulation
-                flex items-center justify-center ${
+              className={`w-2.5 h-2.5 rounded-full transition-all ${
                 idx === currentSlide 
-                  ? 'bg-white' 
-                  : 'bg-white/50 hover:bg-white/80 active:bg-white/90'
+                  ? 'bg-white w-8' 
+                  : 'bg-white/50 hover:bg-white/80'
               }`}
               aria-label={`Go to slide ${idx + 1}`}
-            >
-              <div className={`w-2.5 h-2.5 rounded-full ${
-                idx === currentSlide ? 'bg-blue-600' : 'bg-current'
-              }`} />
-            </button>
+            />
           ))}
         </div>
       )}
