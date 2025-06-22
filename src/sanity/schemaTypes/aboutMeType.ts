@@ -106,6 +106,28 @@ export const aboutMeType = defineType({
           ]
         }
       ]
+    }),
+    defineField({
+      name: 'seo',
+      title: 'SEO Settings',
+      type: 'object',
+      fields: [
+        defineField({
+          name: 'metaTitle',
+          title: 'Meta Title',
+          type: 'string',
+          description: 'Title for search engines (50-60 characters)',
+          validation: (Rule) => Rule.max(60).warning('Keep title under 60 characters for optimal SEO')
+        }),
+        defineField({
+          name: 'metaDescription',
+          title: 'Meta Description',
+          type: 'text',
+          rows: 3,
+          description: 'Description for search engines (150-160 characters)',
+          validation: (Rule) => Rule.max(160).warning('Keep description under 160 characters for optimal SEO')
+        })
+      ]
     })
   ],
 

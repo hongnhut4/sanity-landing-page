@@ -168,8 +168,7 @@ const AssignmentContent = memo(function AssignmentContent() {
                   details={[
                     "Sanity Studio integration",
                     "Dynamic page structure",
-                    "Image optimization",
-                    "Real-time content updates"
+                    "Image optimization"
                   ]}
                 />
               </div>
@@ -243,7 +242,7 @@ const AssignmentContent = memo(function AssignmentContent() {
                   details={[
                     "Pre-fetched data on server",
                     "Hydration boundary optimization",
-                    "SEO-friendly metadata generation",
+                    "SEO-friendly metadata generation (But not implemented fully)",
                     "Reduced client-side API calls"
                   ]}
                 />
@@ -330,8 +329,6 @@ const AssignmentContent = memo(function AssignmentContent() {
                   description="Search engine optimization and social media integration"
                   details={[
                     "Dynamic metadata generation",
-                    "Open Graph tags",
-                    "Twitter Card support",
                     "Structured data markup"
                   ]}
                 />
@@ -357,8 +354,7 @@ const AssignmentContent = memo(function AssignmentContent() {
                   details={[
                     "Automatic deployments from Git",
                     "Preview deployments for PRs",
-                    "Environment variable management",
-                    "Custom domain support"
+                    "Environment variable management"
                   ]}
                 />
 
@@ -367,7 +363,6 @@ const AssignmentContent = memo(function AssignmentContent() {
                   description="Real-time performance tracking"
                   details={[
                     "Vercel Analytics integration",
-                    "Core Web Vitals monitoring",
                     "Error tracking and reporting",
                     "Performance budgets"
                   ]}
